@@ -1,4 +1,3 @@
-import './index.css';
 import { render } from "react-dom";
 import {
   BrowserRouter,
@@ -13,13 +12,12 @@ import Destino from "./routes/Destino";
 
 render(
   <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<Home />}>
+    <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="viagem" element={<Viagem />} />
       <Route path="contato" element={<Contato />} />
       <Route path="destino" element={<Destino />} />
-    </Route>
-  </Routes>
-</BrowserRouter>,
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );

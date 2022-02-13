@@ -3,6 +3,11 @@ import UserTable from "../tables/UserTables";
 import AddUserForm from "../tables/AddUserForm";
 import EditUserForm from "../tables/EditUserForm";
 
+import './style.css';
+import { Conteudo } from "./style";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
+
 const Viagem = () => {
   const userData = [
     { id: 1, nome: 'Renan', sobrenome: 'Matheus', destino: 'Rio de Janeiro', data: '12/03/2022' },
@@ -39,7 +44,9 @@ const Viagem = () => {
   }
 
   return (
-    <div className="conatainer">
+    <div>
+      <Navbar />
+      <main className="pages">
       <h1>Marcar viagem</h1>
       <div className="flex-row">
         <div className="flex-large">
@@ -64,6 +71,8 @@ const Viagem = () => {
           <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
         </div>
       </div>
+      </main>
+      <Footer />
     </div>
   );
 }
