@@ -1,6 +1,7 @@
 const UserTable = (props) => {
     return (
-        <table>
+        <div style={{height: "350px", overflowY: "scroll"}}>
+        <table >
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -32,6 +33,7 @@ const UserTable = (props) => {
 
             </tbody>
         </table>
+        </ div>
     )
 }
 

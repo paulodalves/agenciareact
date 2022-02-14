@@ -4,7 +4,6 @@ import AddUserForm from "../tables/AddUserForm";
 import EditUserForm from "../tables/EditUserForm";
 
 import './style.css';
-import { Conteudo } from "./style";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 
@@ -47,12 +46,12 @@ const Viagem = () => {
     <div>
       <Navbar />
       <main className="pages">
-      <h1>Marcar viagem</h1>
+      <h2>Marcar viagem</h2>
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
             <div>
-              <h2>Editar Cliente e viagem</h2>
+              <h4>Editar Cliente e viagem</h4>
               <EditUserForm
                 setEditing={setEditing}
                 currentUser={currentUser}
@@ -61,13 +60,13 @@ const Viagem = () => {
             </div>
           ) : (
             <div>
-              <h2>Adicionar Cliente e Destino</h2>
+              <h4>Adicionar Cliente e Destino</h4>
               <AddUserForm addUser={addUser} />
             </div>
           )}
         </div>
         <div className="flex-large">
-          <h2>Viagens marcadas</h2>
+          <h4>Viagens marcadas</h4>
           <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
         </div>
       </div>

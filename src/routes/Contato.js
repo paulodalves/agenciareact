@@ -12,7 +12,7 @@ export default function Contato() {
     <>
       <Navbar />
       <main className="pages">
-        <h1 style={{textAlign: "center", padding: "20px"}}>Contato</h1>
+        <h2 >Contato</h2>
         <Divo>
           <Form />
         </Divo>

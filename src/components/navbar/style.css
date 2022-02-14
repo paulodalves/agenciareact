@@ -7,6 +7,11 @@
     font-family: 'Lato', sans-serif;
 }
 
+.logo a {
+    text-decoration: dotted;
+    color: #fff;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;

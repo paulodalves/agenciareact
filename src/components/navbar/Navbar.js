@@ -13,9 +13,9 @@ export default function Navbar() {
   return (
   <>
     <div className="navbar">
-      <div className="logo">Destino Certo</div>
+      <div className="logo"><Link to="/">Destino Certo</Link></div>
       <div className={show ? "links active" : "links"}>
-        <Link onClick={() => showSwitch()} to="/">Home</Link>
+        <Link style={{textDecoration: "none"}} onClick={() => showSwitch()} to="/">Home</Link>
         <Link onClick={() => showSwitch()} to="/viagem">Marcar Viagem</Link>
         <Link onClick={() => showSwitch()} to="/destino">Destinos</Link>
         <Link onClick={() => showSwitch()} to="/contato">Contato</Link>

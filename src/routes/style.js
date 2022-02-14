@@ -62,3 +62,25 @@ export const Divo = styled.div`
     margin-bottom: 50px;
     
 `;
+
+export const Formu = styled.form`
+    input {
+        width: 500px;
+    }
+
+    textarea {
+        height: 150px;
+        resize: none;
+    }
+
+    @media all and (min-width:300px) and (max-width: 600px) {
+        input {
+        width: 300px;
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+    }
+`;
